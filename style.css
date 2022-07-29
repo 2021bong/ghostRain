@@ -1,0 +1,128 @@
+h5,
+p {
+  margin: 0;
+}
+.wrap {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 960px;
+  margin: 0 auto;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.title {
+  font-size: 25px;
+}
+.game-icon {
+  width: 26px;
+  height: 26px;
+}
+.best-score {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 auto 20px auto;
+  padding: 8px 10px;
+  background-color: #e6fbff;
+  border-radius: 30px;
+  line-height: 26px;
+}
+.best-score h5 {
+  margin-right: 8px;
+  display: inline-block;
+}
+.best-score p {
+  display: inline-block;
+}
+
+.ts-container {
+  text-align: center;
+  position: relative;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  width: 800px;
+  margin: 0 auto 10px auto;
+  padding: 10px 0;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.time {
+  display: flex;
+  vertical-align: middle;
+  line-height: 26px;
+}
+.time h5,
+.score h5 {
+  margin-right: 8px;
+}
+.time-icon {
+  width: 26px;
+  height: 26px;
+  display: inline-block;
+  margin-right: 3px;
+}
+.score {
+  display: flex;
+  line-height: 26px;
+}
+.heart-life {
+  text-align: right;
+  width: 800px;
+  height: 30px;
+  margin: 0 auto;
+  padding: 0 0 5px 0;
+}
+.heart-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.none {
+  display: none;
+}
+
+#bg {
+  width: 800px;
+  height: 600px;
+  background: #ccc;
+  margin: 0 auto 20px auto;
+  background: url(./images/bg.png) no-repeat;
+  position: relative;
+}
+#hero {
+  width: 35px;
+  height: 54px;
+  /* display: inline-block; */
+  background: url(./images/hero.png) no-repeat;
+  position: absolute;
+  left: 50%;
+  margin-left: -18px;
+  bottom: 5px;
+}
+#hero.stop {
+  background-position: 0 0;
+}
+#hero.right {
+  background-position: -105px 0;
+}
+#hero.left {
+  background-position: -70px 0;
+}
+.btn {
+  width: 500px;
+  height: 50px;
+  margin: 0 auto;
+  border: 0 none;
+  background: #555;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #297eff;
+}
+
+.btn.playing {
+  background-color: #297eff;
+}

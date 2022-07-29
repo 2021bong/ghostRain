@@ -4,15 +4,52 @@
     <meta charset="UTF-8" />
     <title>Udemy - Ghost Rain</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div id="bg">
-      <span id="hero"></span>
+    <div class="wrap">
+      <h2 class="title">
+        Ghost Rain
+        <img src="./images/ui-game.svg" alt="game-icon" class="game-icon" />
+      </h2>
+      <!-- best score -->
+      <div class="best-score">
+        <h5>Best Score</h5>
+        <p id="bestScore">0</p>
+      </div>
+      <!-- time & score -->
+      <div class="ts-container">
+        <div class="time">
+          <img src="./images/clock.svg" alt="time icon" class="time-icon" />
+          <h5>Time</h5>
+          <p><span id="time">30</span>sec</p>
+        </div>
+        <div class="score">
+          <h5>Score</h5>
+          <p id="score">0</p>
+        </div>
+      </div>
+      <!-- heart life -->
+      <div class="heart-life">
+        <img src="./images/red_heart.png" alt="heart" class="heart-icon" />
+        <img src="./images/red_heart.png" alt="heart" class="heart-icon" />
+        <img src="./images/red_heart.png" alt="heart" class="heart-icon" />
+      </div>
+      <!-- game background -->
+      <div id="bg">
+        <span id="hero"></span>
+      </div>
+      <button id="btn" class="btn">Game Start</button>
     </div>
 
-    <script src="js/settings.js"></script>
-    <script src="js/ghost.js"></script>
-    <script src="js/hero.js"></script>
-    <script src="js/init.js"></script>
+    <script defer src="js/settings.js"></script>
+    <script defer src="js/ghost.js"></script>
+    <script defer src="js/hero.js"></script>
+    <script defer src="js/init.js"></script>
   </body>
 </html>
